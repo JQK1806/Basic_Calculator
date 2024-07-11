@@ -3,11 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Calculator</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div id="theme-toggle">
+        <input type="checkbox" id="dark-mode-toggle">
+        <label for="dark-mode-toggle">Dark Mode</label>
+    </div>
     <div id="calculator">
+        <div id="history"></div>
         <input id="display" readonly>
         <div id="keys">
             <button onclick="appendToDisplay('+')" class="operator-btn">+</button>
@@ -25,7 +31,7 @@
             <button onclick="appendToDisplay('/')" class="operator-btn">/</button>
             <button onclick="appendToDisplay('0')">0</button>
             <button onclick="appendToDisplay('.')">.</button>
-            <button onclick="calculate()">=</button>
+            <button onclick="calculate()" class="operator-btn large-btn">=</button>
             <button onclick="clearDisplay()" class="operator-btn">C</button>
         </div>
     </div>
