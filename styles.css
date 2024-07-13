@@ -94,7 +94,7 @@ button:active{
 }
 
 .large-btn{
-    grid-column: span 2;
+    grid-column: span 4;
 }
 
 body.dark-mode{
